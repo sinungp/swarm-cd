@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   fe-online-recruitment:
-    image: repoclient.dataon.com:443/rmid/fe-online-recruitment:20250106
+    image: repoclient.dataon.com:443/rmid/fe-online-recruitment:20250107
     deploy:
       replicas: 2
       restart_policy:
