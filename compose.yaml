@@ -11,5 +11,3 @@ services:
       - 8080:80
     environment:
       - NODE_ENV=production
-    networks:
-      - fe-network
