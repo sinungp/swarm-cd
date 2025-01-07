@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  fe-online-recruitment:
+    image: repoclient.dataon.com:443/rmid/fe-online-recruitment:20250106
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: any
+    ports:
+      - 8080:80
+    environment:
+      - NODE_ENV=production
+    networks:
+      - fe-network
+
+networks:
+  fe-network:
+    driver: overlay
